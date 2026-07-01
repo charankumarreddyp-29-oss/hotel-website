@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Suites | Kaia Cove Resort & Spa</title>
+<meta name="description" content="Browse Ocean View, Garden View and Family suites at Kaia Cove Resort & Spa, with rates, amenities and instant enquiry booking.">
+<meta name="keywords" content="hotel rooms, ocean view suite, garden view room, family suite, hotel prices, room booking">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Kaia <span>Cove</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html" class="active">Rooms &amp; Suites</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Reserve a Stay</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-media" style="background-image:url('https://images.pexels.com/photos/14746032/pexels-photo-14746032.jpeg?auto=compress&cs=tinysrgb&w=1800')"></div>
+  <div class="container">
+    <p class="breadcrumb">Home / Rooms &amp; Suites</p>
+    <h1>Nineteen rooms. No two views the same.</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filter-row reveal">
+      <button class="filter-btn is-active" data-filter="all">All Rooms</button>
+      <button class="filter-btn" data-filter="ocean">Ocean View</button>
+      <button class="filter-btn" data-filter="garden">Garden View</button>
+      <button class="filter-btn" data-filter="family">Family Suite</button>
+    </div>
+
+    <div class="room-grid">
+
+      <article class="room-card reveal" data-category="garden">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/34672504/pexels-photo-34672504.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cove Garden Room with king bed and warm lighting">
+          <span class="room-tag">Garden View</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 02 — Garden Wing</span>
+          <h3>Cove Garden Room</h3>
+          <p>A quiet courtyard room facing the kitchen garden, with a rain shower and a private reading nook.</p>
+          <ul class="room-amenities">
+            <li>King bed</li><li>Rain shower</li><li>Free Wi-Fi</li><li>28m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹6,500</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card reveal reveal-delay-1" data-category="ocean">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/14746032/pexels-photo-14746032.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Horizon Ocean Suite with private balcony overlooking the sea">
+          <span class="room-tag">Ocean View</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 07 — Cliff Wing</span>
+          <h3>Horizon Ocean Suite</h3>
+          <p>Our most requested suite: a wraparound balcony, a soaking tub by the window, and an uninterrupted horizon.</p>
+          <ul class="room-amenities">
+            <li>King bed</li><li>Soaking tub</li><li>Private balcony</li><li>42m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹11,200</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card reveal reveal-delay-2" data-category="family">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/18285946/pexels-photo-18285946.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Tide Heritage Suite with ornate decor and separate living area">
+          <span class="room-tag">Family Suite</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 14 — Heritage Wing</span>
+          <h3>Tide Heritage Suite</h3>
+          <p>A two-room suite with a connecting living area, built for families who want space without splitting up.</p>
+          <ul class="room-amenities">
+            <li>2 Bedrooms</li><li>Living area</li><li>Claw-foot tub</li><li>60m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹15,800</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card reveal" data-category="ocean">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/30037427/pexels-photo-30037427.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Overwater style suite at Kaia Cove with infinity pool view at sunset">
+          <span class="room-tag">Ocean View</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 11 — Cliff Wing</span>
+          <h3>Tidepool Suite</h3>
+          <p>Set closest to the water's edge, with its own plunge pool and uninterrupted sunset views.</p>
+          <ul class="room-amenities">
+            <li>King bed</li><li>Plunge pool</li><li>Outdoor shower</li><li>48m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹13,600</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card reveal reveal-delay-1" data-category="garden">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/18426842/pexels-photo-18426842.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cove Courtyard Room with warm seating area">
+          <span class="room-tag">Garden View</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 04 — Garden Wing</span>
+          <h3>Cove Courtyard Room</h3>
+          <p>Ground-floor comfort with direct courtyard access, ideal for early risers heading to breakfast first.</p>
+          <ul class="room-amenities">
+            <li>Twin or King</li><li>Courtyard access</li><li>Free Wi-Fi</li><li>26m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹6,900</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card reveal reveal-delay-2" data-category="family">
+        <div class="room-media">
+          <img src="https://images.pexels.com/photos/17619969/pexels-photo-17619969.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cove Wing exterior, home to the Family Terrace Suite">
+          <span class="room-tag">Family Suite</span>
+        </div>
+        <div class="room-body">
+          <span class="room-code">Room 16 — Heritage Wing</span>
+          <h3>Family Terrace Suite</h3>
+          <p>A ground-floor suite opening straight onto the lawn, with room for a rollaway bed or cot.</p>
+          <ul class="room-amenities">
+            <li>2 Bedrooms</li><li>Private terrace</li><li>Extra bed option</li><li>55m²</li>
+          </ul>
+          <div class="room-meta">
+            <div class="room-price"><b>₹14,400</b><span> / night</span></div>
+            <a class="btn btn-dark" href="contact.html">Reserve</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container">
+    <div class="cta-banner reveal" style="background:var(--teal);color:#fff;">
+      <div>
+        <h2>Not sure which suite fits?</h2>
+        <p>Tell us your dates and party size — our team will recommend the right room within a day.</p>
+      </div>
+      <a class="btn" href="contact.html">Ask Us to Recommend</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Kaia Cove</span>
+        <p>A boutique cliffside resort with nineteen ocean-facing suites, a spa and a restaurant built around the coastline.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+911234567890">+91 12345 67890</a>
+        <a href="mailto:stay@kaiacove.example">stay@kaiacove.example</a>
+        <p>Cliff Road, Netravali Coast, India</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Front Desk — 24 hours</p>
+        <p>Tidewater Restaurant — 7am–11pm</p>
+        <p>Cove Spa — 9am–8pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kaia Cove Resort &amp; Spa. Built for MANTRA 2026 Summer School.</p>
+      <p>Designed &amp; developed as a student frontend project.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

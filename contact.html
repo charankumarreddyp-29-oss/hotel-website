@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Booking | Kaia Cove Resort & Spa</title>
+<meta name="description" content="Contact Kaia Cove Resort & Spa or send a booking enquiry with your dates, room type and guest count. We reply within a day.">
+<meta name="keywords" content="hotel contact, hotel booking form, resort enquiry, reservations, hotel location">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Kaia <span>Cove</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms &amp; Suites</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Reserve a Stay</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-media" style="background-image:url('https://images.pexels.com/photos/28408327/pexels-photo-28408327.jpeg?auto=compress&cs=tinysrgb&w=1800')"></div>
+  <div class="container">
+    <p class="breadcrumb">Home / Contact &amp; Booking</p>
+    <h1>Tell us your dates — we'll hold the room</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <p class="eyebrow">Reach us</p>
+        <h2 style="margin-bottom:28px;">Find us above the cove</h2>
+
+        <div class="info-block">
+          <span class="ico">@</span>
+          <div><h4>Email</h4><p>stay@kaiacove.example</p></div>
+        </div>
+        <div class="info-block">
+          <span class="ico">Tel</span>
+          <div><h4>Phone</h4><p>+91 12345 67890</p></div>
+        </div>
+        <div class="info-block">
+          <span class="ico">Loc</span>
+          <div><h4>Address</h4><p>Cliff Road, Netravali Coast, India 403001</p></div>
+        </div>
+        <div class="info-block">
+          <span class="ico">Hrs</span>
+          <div><h4>Front Desk</h4><p>Open 24 hours, every day of the year</p></div>
+        </div>
+
+        <div class="map-frame">
+          <img src="https://images.pexels.com/photos/31045423/pexels-photo-31045423.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Coastal cliffside map view near Kaia Cove Resort location">
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form class="booking-form" id="bookingForm" novalidate>
+          <p class="eyebrow">Booking enquiry</p>
+          <h2 style="margin-bottom:22px;">Request a reservation</h2>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name">
+              <span class="error-msg">Please tell us your name.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              <span class="error-msg">Enter a valid phone number.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field full">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <span class="error-msg">Enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="checkin">Check-in</label>
+              <input type="date" id="checkin" name="checkin">
+              <span class="error-msg">Choose a check-in date.</span>
+            </div>
+            <div class="field">
+              <label for="checkout">Check-out</label>
+              <input type="date" id="checkout" name="checkout">
+              <span class="error-msg">Check-out must be after check-in.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="roomType">Room type</label>
+              <select id="roomType" name="roomType">
+                <option value="">Select a room</option>
+                <option value="garden">Cove Garden Room</option>
+                <option value="ocean">Horizon Ocean Suite</option>
+                <option value="tidepool">Tidepool Suite</option>
+                <option value="heritage">Tide Heritage Suite</option>
+                <option value="unsure">Not sure — recommend one</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option value="">Select guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4+ guests</option>
+              </select>
+              <span class="error-msg">Select number of guests.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field full">
+              <label for="message">Anything we should know? (optional)</label>
+              <textarea id="message" name="message" placeholder="Special occasion, dietary needs, late arrival..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-full">Send Booking Request</button>
+          <p class="form-note">This is a demo form for a student project — no payment is collected and no email is actually sent.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Before you write in</p>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="reveal" style="max-width:760px;">
+
+      <div class="faq-item">
+        <button class="faq-q"><span>What time is check-in and check-out?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Check-in is from 2pm and check-out is by 11am. Early check-in or late check-out can usually be arranged — just ask when you book.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Is breakfast included in the room rate?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes — all rates include breakfast at Tidewater Restaurant, served from 7am to 10:30am daily.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Do you allow children and extra beds?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Children of all ages are welcome. Rollaway beds and cots are available for the Family and Heritage suites at no extra charge, subject to availability.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>What is your cancellation policy?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Free cancellation up to 5 days before check-in. Cancellations within 5 days are charged one night's stay.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Is the resort accessible by public transport?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>We're a 40-minute drive from the nearest railway station. Let us know your arrival time and we'll arrange a pickup.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="toast" id="toast">
+  <strong>Request received</strong>
+  <span>Thank you — our team will confirm by email shortly.</span>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Kaia Cove</span>
+        <p>A boutique cliffside resort with nineteen ocean-facing suites, a spa and a restaurant built around the coastline.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+911234567890">+91 12345 67890</a>
+        <a href="mailto:stay@kaiacove.example">stay@kaiacove.example</a>
+        <p>Cliff Road, Netravali Coast, India</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Front Desk — 24 hours</p>
+        <p>Tidewater Restaurant — 7am–11pm</p>
+        <p>Cove Spa — 9am–8pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kaia Cove Resort &amp; Spa. Built for MANTRA 2026 Summer School.</p>
+      <p>Designed &amp; developed as a student frontend project.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
